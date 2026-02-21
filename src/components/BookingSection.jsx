@@ -96,7 +96,7 @@ export default function BookingSection() {
   };
 
   return (
-    <section id="booking" className="bg-[#0a0a0a] px-4 sm:px-6 md:px-16 pb-20 sm:pb-24">
+    <section id="booking" className="bg-[#0a0a0a] px-4 sm:px-6 md:px-16 pb-14 sm:pb-16 md:pb-20">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

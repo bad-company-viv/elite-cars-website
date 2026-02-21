@@ -42,7 +42,7 @@ export default function ExperienceSection() {
   };
 
   return (
-    <section id="services" className="relative min-h-[100svh]">
+    <section id="services" className="relative">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -53,9 +53,9 @@ export default function ExperienceSection() {
         <div className="absolute inset-0 bg-black/85" />
       </div>
 
-      <div className="relative z-10 py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-16">
+      <div className="relative z-10 py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
             {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
@@ -73,7 +73,7 @@ export default function ExperienceSection() {
                 From airport arrivals to grand celebrations, our bespoke services transform ordinary moments into extraordinary memories. Experience Pune's finest luxury car rental service.
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 sm:gap-8 mb-10 sm:mb-12">
+              <div className="flex flex-wrap items-center gap-6 sm:gap-8 mb-8 sm:mb-10">
                 <div>
                   <p className="text-3xl sm:text-4xl text-white font-light">1000+</p>
                   <p className="text-white/40 text-xs sm:text-sm tracking-[0.12em] sm:tracking-widest uppercase">Happy Clients</p>

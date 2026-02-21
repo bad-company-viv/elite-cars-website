@@ -31,7 +31,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-[#0a0a0a] py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-16">
+    <section className="bg-[#0a0a0a] py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-12 sm:mb-20"
+          className="text-center mb-10 sm:mb-14"
         >
           <span className="text-white/40 text-xs sm:text-sm tracking-[0.25em] sm:tracking-[0.4em] uppercase mb-3 sm:mb-4 block">Client Stories</span>
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-light text-white" style={{ fontFamily: 'serif' }}>
@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mt-12 sm:mt-20 pt-12 sm:pt-20 border-t border-white/[0.06]"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mt-10 sm:mt-14 pt-10 sm:pt-14 border-t border-white/[0.06]"
         >
           <div className="text-center">
             <div className="flex items-center justify-center gap-1 mb-2">

@@ -57,8 +57,8 @@ export default function FleetSection() {
       : fleet.filter((car) => car.category === activeCategory);
 
   return (
-    <section id="fleet" className="bg-[#0a0a0a] py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-16">
-      <div className="max-w-7xl mx-auto mb-12 sm:mb-20">
+    <section id="fleet" className="bg-[#0a0a0a] py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-16">
+      <div className="max-w-7xl mx-auto mb-10 sm:mb-14">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -141,7 +141,7 @@ export default function FleetSection() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="flex justify-center mt-12 sm:mt-16"
+        className="flex justify-center mt-10 sm:mt-12"
       >
         <Button
           variant="outline"
