@@ -1,6 +1,7 @@
 import React from 'react';
-import { Phone, Mail, MessageCircle, Instagram, Facebook, Linkedin } from 'lucide-react';
-import eliteLogo from '@/public/elite-logo-white.png';
+import { Phone, Mail, Instagram, Facebook, Linkedin } from 'lucide-react';
+import eliteLogo from '@/public/elite-logo-2.png';
+import whatsappIcon from '@/public/whatsapp.webp';
 
 export default function Layout({ children }) {
   return (
@@ -62,9 +63,9 @@ export default function Layout({ children }) {
               </p>
               <div className="flex gap-4">
                 {[Instagram, Facebook, Linkedin].map((Icon, index) => (
-                  <a 
+                  <a
                     key={index}
-                    href="#" 
+                    href="#"
                     className="w-9 h-9 sm:w-10 sm:h-10 border border-white/10 flex items-center justify-center hover:border-white/30 hover:bg-white/5 transition-all duration-300"
                   >
                     <Icon className="w-4 h-4 text-white/60" />
@@ -91,7 +92,7 @@ export default function Layout({ children }) {
             <div>
               <h4 className="text-white text-sm tracking-widest uppercase mb-6">Services</h4>
               <ul className="space-y-4">
-                {['Self-Drive Rentals', 'Chauffeur Services', 'Airport Transfers', 'Wedding Cars', 'Corporate Rentals'].map((link) => (
+                {['Leisure Service', 'Chauffeur Services', 'Airport Transfers', 'Wedding Cars', 'Corporate Rentals'].map((link) => (
                   <li key={link}>
                     <a href="#" className="text-white/40 text-sm hover:text-white transition-colors duration-300">
                       {link}
@@ -106,9 +107,9 @@ export default function Layout({ children }) {
               <h4 className="text-white text-sm tracking-widest uppercase mb-6">Contact Us</h4>
               <ul className="space-y-4">
                 <li>
-                  <a href="tel:+919529375167" className="flex items-center gap-3 text-white/40 text-sm hover:text-white transition-colors">
+                  <a href="tel:+919920053379" className="flex items-center gap-3 text-white/40 text-sm hover:text-white transition-colors">
                     <Phone className="w-4 h-4" />
-                    +91 95293 75167
+                    +91 9920053379
                   </a>
                 </li>
                 <li>
@@ -119,16 +120,6 @@ export default function Layout({ children }) {
                 </li>
               </ul>
 
-              {/* WhatsApp Button */}
-              <a 
-                href="https://wa.me/919529375167?text=Hi, I'd like to book a luxury car"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-6 px-5 sm:px-6 py-3 bg-[#25D366] hover:bg-[#22c55e] text-white text-sm transition-colors duration-300"
-              >
-                <MessageCircle className="w-4 h-4" />
-                Book via WhatsApp
-              </a>
             </div>
           </div>
 
@@ -146,13 +137,17 @@ export default function Layout({ children }) {
       </footer>
 
       {/* Fixed WhatsApp Button */}
-      <a 
-        href="https://wa.me/919529375167?text=Hi, I'd like to book a luxury car"
+      <a
+        href="https://wa.me/919920053379?text=Hi, I'd like to book a luxury car"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-50 w-12 h-12 md:w-14 md:h-14 bg-[#25D366] hover:bg-[#22c55e] rounded-full flex items-center justify-center shadow-lg shadow-[#25D366]/20 transition-all duration-300 hover:scale-110"
+        className="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex items-center justify-center transition-all duration-300 hover:scale-110"
       >
-        <MessageCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />
+        <img
+          src={whatsappIcon}
+          alt="WhatsApp"
+          className="h-full w-full object-cover"
+        />
       </a>
     </div>
   );

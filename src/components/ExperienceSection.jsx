@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 const services = [
   {
     icon: Car,
-    title: 'Self Drive Service',
+    title: 'Leisure Service',
     description: 'Drive premium cars on your own terms with flexible rentals'
   },
   {

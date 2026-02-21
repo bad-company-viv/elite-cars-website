@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const initialForm = {
   name: '',
   phone: '',
-  service: 'Self Drive Service',
+  service: 'Leisure Service',
   date: '',
   pickup: ''
 };
@@ -76,7 +76,7 @@ export default function BookingSection() {
     }
 
     const message = `Booking Request\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nDate: ${formData.date}\nPickup: ${formData.pickup}`;
-    const whatsappUrl = `https://wa.me/919529375167?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919920053379?text=${encodeURIComponent(message)}`;
     const popup = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
     if (popup) {
@@ -153,7 +153,7 @@ export default function BookingSection() {
               onChange={handleChange}
               className="w-full bg-white/[0.03] border border-white/[0.12] text-white px-4 py-3 focus:outline-none focus:border-white/35"
             >
-              <option value="Self Drive Service" className="bg-[#0a0a0a]">Self Drive Service</option>
+              <option value="Leisure Service" className="bg-[#0a0a0a]">Leisure Service</option>
               <option value="Chauffeur Service" className="bg-[#0a0a0a]">Chauffeur Service</option>
               <option value="Wedding Booking" className="bg-[#0a0a0a]">Wedding Booking</option>
               <option value="Airport Transfer" className="bg-[#0a0a0a]">Airport Transfer</option>
