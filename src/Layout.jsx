@@ -14,6 +14,7 @@ export default function Layout({ children }) {
           --color-charcoal: #1a1a1a;
           --color-silver: #c0c0c0;
           --color-platinum: #e8e8e8;
+          --color-gold: #D4AF37;
         }
         
         body {
@@ -131,6 +132,11 @@ export default function Layout({ children }) {
             <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
               <a href="#" className="text-white/30 text-sm hover:text-white/60 transition-colors">Privacy Policy</a>
               <a href="#" className="text-white/30 text-sm hover:text-white/60 transition-colors">Terms of Service</a>
+              <div className="flex items-center gap-3 ml-4">
+
+                <img src="/sitecredits/fabulous.png" alt="Fabulous" className="h-5 w-auto opacity-60" />
+                <img src="/sitecredits/gocommercially.webp" alt="Go Comercially" className="h-5 w-auto opacity-60" />
+              </div>
             </div>
           </div>
         </div>
@@ -141,7 +147,7 @@ export default function Layout({ children }) {
         href="https://wa.me/919920053379?text=Hi, I'd like to book a luxury car"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex items-center justify-center transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 right-8 md:bottom-8 lg:right-16 z-50 w-12 h-12 rounded-full overflow-hidden flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg"
       >
         <img
           src={whatsappIcon}

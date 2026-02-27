@@ -3,48 +3,36 @@ import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-import mercedesImage from '@/public/images/Mercedes.jpeg';
-import bmwImage from '@/public/images/BMW.jpeg';
-import audiImage from '@/public/images/Audi.jpeg';
-import rangeRoverImage from '@/public/images/Range.jpeg';
-
-const categories = ['All', 'Luxury Sedans', 'SUVs'];
+const categories = ['All', 'Luxury Sedans', 'Exotic', 'Wedding'];
 
 const fleet = [
   {
     id: 1,
-    name: 'Mercedes-Benz S-Class',
+    name: 'Mercedes-Benz E-Class',
     category: 'Luxury Sedans',
-    image: mercedesImage,
-    specs: '4.0L V8 • 496 HP'
+    image: '/merc-E.png',
+    specs: '2.0L I4 • 255 HP'
   },
   {
     id: 2,
     name: 'BMW 7 Series',
     category: 'Luxury Sedans',
-    image: bmwImage,
+    image: '/bmw.png',
     specs: '3.0L I6 • 375 HP'
   },
   {
     id: 3,
-    name: 'Audi A8 L',
-    category: 'Luxury Sedans',
-    image: audiImage,
-    specs: '3.0L V6 • Matrix LED'
-  },
-  {
-    id: 4,
     name: 'Audi A6',
     category: 'Luxury Sedans',
-    image: audiImage,
+    image: '/audi trial.webp',
     specs: '2.0L Turbo • Quattro'
   },
   {
-    id: 5,
-    name: 'Range Rover Sport',
-    category: 'SUVs',
-    image: rangeRoverImage,
-    specs: '3.0L Turbo • Terrain Response'
+    id: 4,
+    name: 'Rolls Royce Phantom',
+    category: 'Exotic',
+    image: '/rolls-royce.png',
+    specs: '6.75L V12 • 563 HP'
   }
 ];
 
@@ -78,11 +66,10 @@ export default function FleetSection() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-4 sm:px-6 py-2.5 sm:py-3 text-[11px] sm:text-xs tracking-[0.12em] sm:tracking-widest uppercase transition-all duration-500 border ${
-                  activeCategory === category
+                className={`px-4 sm:px-6 py-2.5 sm:py-3 text-[11px] sm:text-xs tracking-[0.12em] sm:tracking-widest uppercase transition-all duration-500 border ${activeCategory === category
                     ? 'bg-white text-black border-white'
                     : 'bg-transparent text-white/60 border-white/20 hover:border-white/40 hover:text-white'
-                }`}
+                  }`}
               >
                 {category}
               </button>
